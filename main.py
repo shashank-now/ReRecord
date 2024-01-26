@@ -26,7 +26,7 @@ class ScrCpyTask(threading.Thread):
             init_file_name = pathlib.Path(f"file_{datetime.datetime.now().strftime('%H_%M_%S')}.mkv")
 
             self.record_process = subprocess.Popen(
-                ["cmd","/c",r"C:\Users\asus\Desktop\Books\ml\scrcpy-win64-v2.3.1\scrcpy-win64-v2.3.1\scrcpy.exe",
+                ["cmd","/c",r"C:\Users\asus\Desktop\scrcpy-win64-v2.3.1\scrcpy-win64-v2.3.1\scrcpy.exe",
                  "--no-display", "--record", init_file_name], cwd=os.getcwd(), stdin=subprocess.PIPE,
                 stdout=subprocess.PIPE)
 
